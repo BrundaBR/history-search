@@ -1,0 +1,26 @@
+
+{% load static %}
+<html>
+<head>
+
+
+<link rel="stylesheet" href='{% static "index.css" %}'>
+</head>
+<body>
+
+
+<div class="search">
+    <center>
+    <P class="head">History search</P><br>
+    <form method="GET">
+    <input class="box" type="search" name="box"><br>
+    <button  class="btn" type="submit">Submit</button>
+</form>
+</center>
+</div>
+
+<script rel="text/javscript" src="{% static 'index.js' %}"></script>
+</body>
+
+
+</html>

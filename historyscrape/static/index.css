@@ -1,0 +1,26 @@
+.search{
+    margin-top: 100px;
+    
+  
+}
+.box{
+    padding:10px;
+    width: 900px;
+    height: 30px;
+    margin-bottom: 20px;
+    
+}
+.head{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    padding:20px;
+    color: cornflowerblue;
+}
+.btn{
+    padding:10px;
+    background-color: cornflowerblue;
+    color: #fff;
+    width: 100px;
+
+}
