@@ -5,7 +5,7 @@ Description:
 
 Requirments
 1.javascript to make it apppealing
-2.beautiful soup to scrape
-3.html and css
+2.selenium to go to wiki and in search bar add keyword +history
+3.beautiful soup to scrape
 
 
