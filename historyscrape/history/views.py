@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from django.utils.datastructures import MultiValueDictKeyError
-# Create your views here.
-
-
+from .scrape import scrape_fun
+import requests
 
 
 
@@ -10,7 +9,9 @@ from django.utils.datastructures import MultiValueDictKeyError
 def index(request):
     try:
         name=request.GET["box"]
-        scrape(name)
+        ret=scrape_fun(name)
+        print(ret)
+
     except MultiValueDictKeyError:
         name=None
 
