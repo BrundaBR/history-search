@@ -3,7 +3,9 @@ from django.utils.datastructures import MultiValueDictKeyError
 from .scrape import scrape_fun,detailInfo
 import requests
 
-
+def checkwords(string):
+    if len(string)>100:
+        print(string)
 def index(request):
     try:
         return_val=[]
@@ -14,7 +16,8 @@ def index(request):
             string=" ".join(delt)
             return_val.append(string)
             break
-        final_out=" ".join(return_val)
+        final_str=" ".join(return_val)
+        # checkwords(final_str)
     except MultiValueDictKeyError:
         print("couldn't search!")
-    return render(request,'index.html',{'txt':final_out})
+    return render(request,'index.html',{'key':final_str})
