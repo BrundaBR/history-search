@@ -1,29 +1,28 @@
-
 {% load static %}
 <html>
 <head>
-
-
-<link rel="stylesheet" href='{% static "index.css" %}'>
+<title>History</title>
+<link rel="stylesheet" href='{% static "styles.css" %}'>
+<!-- <link rel="stylesheet" href='{% static "index.css" %}'> -->
 </head>
 <body>
-
-
+<div class="disp">
 <div class="search">
     <center>
-    <P class="head">History search</P><br>
+    <span class="head__text">History search</span><br>
+    
     <form method="GET">
     <input class="box" type="search" name="box"><br>
     <button  class="btn" type="submit">Submit</button>
 </form>
 </center>
 </div>
+</div>
 <div class="content-display">
     {{key}}
 </div>
 
-<script rel="text/javscript" src="{% static 'index.js' %}"></script>
+<script rel="text/javscript" src="{% static 'effect.js' %}"></script>
+<!-- <script rel="text/javscript" src="{% static 'index.js' %}"></script> -->
 </body>
-
-
 </html>

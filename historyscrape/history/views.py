@@ -16,8 +16,8 @@ def index(request):
             string=" ".join(delt)
             return_val.append(string)
             break
-        final_str=" ".join(return_val)
+
         # checkwords(final_str)
     except MultiValueDictKeyError:
         print("couldn't search!")
-    return render(request,'index.html',{'key':final_str})
+    return render(request,'index.html',{'key':" ".join(return_val)})
