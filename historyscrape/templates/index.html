@@ -6,10 +6,16 @@
 <!-- <link rel="stylesheet" href='{% static "index.css" %}'> -->
 </head>
 <body>
+   
 <div class="disp">
 <div class="search">
     <center>
-    <span class="head__text">History search</span><br>
+    <span class="hoogle">
+        <img src="{% static 'logo.png' %}" alt="logo" height="100" width="290">
+
+    </span>
+    
+    <div class="head__text">Search the History</div><br>
     
     <form method="GET">
     <input class="box" type="search" name="box"><br>
@@ -21,6 +27,7 @@
 <div class="content-display">
     {{key}}
 </div>
+
 
 <script rel="text/javscript" src="{% static 'effect.js' %}"></script>
 <!-- <script rel="text/javscript" src="{% static 'index.js' %}"></script> -->
