@@ -71,4 +71,10 @@ width: 200px;
   img:hover{
       width: 350;
   }
-  
+  @media all and (max-width:900px){
+   body{
+       display: none;
+   }
+   
+
+  }
