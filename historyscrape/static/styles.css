@@ -1,6 +1,6 @@
-body{
+.whole_content{
     background:linear-gradient(to right top,rgb(133, 202, 230),#fff);
-
+    width: max-content;
 }
 .head__text{
     font-weight: 500;
@@ -10,8 +10,8 @@ body{
 .disp{
     margin-top: 10px;
     margin-left: 15%;
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
     width: 150vh;
     height: 50vh;
     border-radius: 5px;
@@ -70,11 +70,41 @@ width: 200px;
 
   img:hover{
       width: 350;
+      
   }
-  @media all and (max-width:900px){
-   body{
-       display: none;
-   }
-   
 
-  }
+  @media all and (max-width:600px){
+   .disp{
+    margin-top: 0px;
+    margin-left: 0%;
+    
+
+padding: 10px;
+    width: 50vh;
+    height: 60vh;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #fff;
+    background-color: #fff;  
+   }
+   .content-display{
+       padding-top:10%;
+       width:50vh;
+       height: max-content;
+       padding-left: 0px;
+       margin-left: 0;
+   }
+   img{
+       width: 100px;
+       height: 50px;
+   }
+   img:hover{
+    width: 150;
+    
+}
+   .box{
+       width: 250px;
+   }
+
+    
+   }
+ 
